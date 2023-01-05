@@ -55,8 +55,8 @@
             <select name="gender" id="gender" required>
               <option value="" disabled selected hidden>Gender</option>
               <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="others">Other</option>
+              <option value="female"><p>Female</p></option>
+              <option value="others"><p>Other</p></option>
             </select>
             <select id="country" name="country" class="form-control" required>
               <option value="" disabled selected hidden>Country</option>
@@ -364,30 +364,152 @@
 
             <input type="text" name="relationship" id="relationship" placeholder="Relationship" required/>
 
-            <input type="text" name="hobby" id="hobbies" placeholder="hobbies" />
+            <input type="text" name="hobby" id="hobbies" placeholder="Hobbies" />
           </div>
 
           <div class="hobby">
-            <p>Designing</p>
-            <p>Public Speaking</p>
-            <p>Cooking</p>
-            <p>Reading</p>
-            <p>Digital Arts</p>
-            <p>Ice Skating</p>
-            <p>Writing</p>
-            <p>Browsing</p>
-            <p>Bike Riding</p>
-            <p>Travelling</p>
-            <p>Music</p>
-            <p>Playing</p>
-            <!-- <a href=""></a> -->
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Designing" id="Designing" type="checkbox">
+              <span class="custom-checkbox-text">Designing</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Public Speaking" id="publicSpeaking" type="checkbox">
+              <span class="custom-checkbox-text">Public Speaking</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Cooking" id="cooking" type="checkbox">
+              <span class="custom-checkbox-text">Cooking</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Reading" id="reading" type="checkbox">
+              <span class="custom-checkbox-text">Reading</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Digital Arts" id="digitalArts" type="checkbox">
+              <span class="custom-checkbox-text">Digital Arts</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Ice Skating" id="iceSkating" type="checkbox">
+              <span class="custom-checkbox-text">Ice Skating</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Writing" id="writing" type="checkbox">
+              <span class="custom-checkbox-text">Writing</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Browsing" id="browsing" type="checkbox">
+              <span class="custom-checkbox-text">Browsing</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Bike Riding" id="bikeRiding" type="checkbox">
+              <span class="custom-checkbox-text">Bike Riding</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Travelling" id="travelling" type="checkbox">
+              <span class="custom-checkbox-text">Travelling</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Music" id="music" type="checkbox">
+              <span class="custom-checkbox-text">Music</span>
+            </label>
+
+            <label class="custom-checkbox">
+              <input type="hidden" name="alarm" value="False" />
+              <input class="checkbox" name="alarm" value="Playing" id="playing" type="checkbox">
+              <span class="custom-checkbox-text">Playing</span>
+            </label>
           </div>
 
           <div class="button-1">
-            <input type="submit" name="submit" value="GENERATE" id="submit" onclick="return validation()">
+            <input type="submit" name="submit" value="GENERATE" id="submit" onclick="validation()">
           </div>
 
         </form>
+
+        <div class="search-result">
+          <div class="result-1">
+            <div class="result-img">
+              <img src="images/1.png" alt="">
+            </div>
+            <div class="result-par">
+              <h3>LAPTOP BAG</h3>
+              <P>Gift your loved ones with luxurious laptop bag</P>
+            </div>
+            <div class="result-arrow">
+              <img src="images/Left.png" alt="">
+            </div>
+          </div>
+          <div class="result-1">
+            <div class="result-img">
+              <img src="images/2.png" alt="">
+            </div>
+            <div class="result-par">
+              <h3>SUBSCRIPTION</h3>
+              <P>Gift your loved ones with luxurious laptop bag</P>
+            </div>
+            <div class="result-arrow">
+              <img src="images/Left.png" alt="">
+            </div>
+          </div>
+          <div class="result-1">
+            <div class="result-img">
+              <img src="images/3.png" alt="">
+            </div>
+            <div class="result-par">
+              <h3>RESTAURANT GIFT CARD</h3>
+              <P>Gift your loved ones with luxurious laptop bag</P>
+            </div>
+            <div class="result-arrow">
+              <img src="images/Left.png" alt="">
+            </div>
+          </div>
+          <div class="result-1">
+            <div class="result-img">
+              <img src="images/4.png" alt="">
+            </div>
+            <div class="result-par">
+              <h3>LOCAL BOOKSTORE</h3>
+              <P>Gift your loved ones with luxurious laptop bag</P>
+            </div>
+            <div class="result-arrow">
+              <img src="images/Left.png" alt="">
+            </div>
+          </div>
+          <div class="result-1">
+            <div class="result-img">
+              <img src="images/5.png" alt="">
+            </div>
+            <div class="result-par">
+              <h3>LOCAL ART GIIFT CARD</h3>
+              <P>Gift your loved ones with luxurious laptop bag</P>
+            </div>
+            <div class="result-arrow">
+              <img src="images/Left.png" alt="">
+            </div>
+          </div>
+        </div>
+
         </div>
       </div>
 

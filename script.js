@@ -1,15 +1,56 @@
 
 function validation() {
-  var age = +document.getElementById('age').value;
+  var age = document.getElementById('age').value;
   
   if ( !( age > 1 && age<100 ) ){
   
           alert("The age must be a number between 1 and 100");
           return false;
   }
-  
   return true;
   }
+
+  const addcolumn = document.querySelector("#submit");
+  
+  addcolumn.addEventListener("click",columnresult);
+
+
+  function columnresult () {
+    
+    let result = document.querySelector(".search-result");
+     
+    resultdisplay(result);
+  }
+
+ 
+function resultdisplay(result){
+  
+  if(result.style.display == "block") {
+    result.style.display = "none";
+  }
+  else{
+    result.style.display = "block";
+  }
+}
+
+  let hobbies = document.getElementById("hobbies");
+  let listArray = [];
+
+  var checkBoxes = document.querySelectorAll(".checkbox");
+
+  for(let checkbox of checkBoxes) {
+    checkbox.addEventListener("click", function(){
+      if(this.checked === true) {
+        listArray.push(this.value);
+        hobbies.value = listArray.join(" , ");
+      }
+      else {
+        listArray = listArray.filter(e => e !== this.value);
+        hobbies.value = listArray.join(" , ");
+      }
+    })
+  }
+
 
 
 

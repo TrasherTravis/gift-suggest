@@ -63,19 +63,20 @@ nav {
 }
 
 .group-2 {
-  width: 57%;
+  width: 65%;
 }
 
 .heading-1 {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .heading-1 p {
-  font-size: 6.4rem;
+  font-size: 6rem;
   font-weight: 700;
   color: white;
   text-align: center;
   font-family: "Wicked Grit Regular";
+  line-height: 8rem;
 }
 
 .image-1 {
@@ -109,7 +110,7 @@ nav {
   width: 45%;
   text-align: center;
   background: white;
-  border-radius: 4rem;
+  border-radius: 3.5rem;
 }
 
 .input-box {
@@ -146,20 +147,37 @@ nav {
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
+  justify-content: center;
 }
 
-.hobby p {
+.custom-checkbox{
+  padding: 1rem 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.custom-checkbox-text {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  color:black;
+  cursor: pointer;
   font-size: 1.6rem;
-  font-weight: 400;
-  color: black;
-  background-color: pink;
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
+  font-weight: 500;
+  user-select: none;
+  border-radius: 1rem;
+  border: 1px solid rgba(11, 9, 9, 0.15);
+}
+
+.checkbox:checked ~ .custom-checkbox-text {
+  background-color: var(--purple);
+  color: white;
+  border: none;
 }
 
 .button-1 {
-  padding: 5rem 0;
+  padding: 5rem 0 5rem ;
 }
 
 .button-1 input {
@@ -171,6 +189,35 @@ nav {
   border-radius: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.result-par h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: black;
+  font-family: "Space Grotesk", sans-serif;
+}
+.result-par p{
+  color: black;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.search-result{
+  padding: 1rem 5rem;
+  height: 58vh;
+  overflow: scroll;
+  display: none;
+}
+.result-1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.result-par{
+  text-align: start;
 }
 
 .group-5 {
@@ -275,17 +322,6 @@ nav {
   font-weight: 700;
   padding: 2rem 0;
 }
-
-/* .card-3 h3{
-    color: white;
-    font-size: 1.6rem;
-    font-weight: 400;
-    background: var(--purple);
-    border-radius: 2rem;
-    width: 40%;
-    text-align: center;
-    padding: .8rem 0;
-} */
 
 .card-3 p {
   color: white;
@@ -590,10 +626,25 @@ p {
   gap: 2.4rem;
 }
 
+@media (max-width: 1120px){
+  .heading-1 p{
+    font-size: 4.6rem;
+  }
+
+  .custom-checkbox-text{
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .custom-checkbox{
+    padding: .8rem 0;
+  }
+}
+
 @media (max-width: 900px) {
 
   .heading-1 p{
-    font-size: 4.3rem;
+    font-size: 4rem;
   }
 
   .group-3 {
@@ -609,6 +660,19 @@ p {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .custom-checkbox-text{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .hobby {
+    padding: 0 4.5rem;
+    gap: 1rem;
+  }
+  .custom-checkbox{
+    padding: .6rem 0;
+  }
+
   .heading-2 {
     text-align: center;
     margin-top: 2rem;
@@ -647,10 +711,25 @@ p {
     text-align: center;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
 
   .heading-1 p{
     font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .custom-checkbox-text{
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .custom-checkbox{
+    padding: .4rem 0;
+  }
+
+  .hobby {
+    padding: 0 4.5rem;
+    gap: .8rem;
   }
 
   .card-split {
@@ -673,11 +752,32 @@ p {
     justify-content: center;
     gap: 2rem;
   }
+
+  .custom-checkbox-text{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .hobby {
+    padding: 0 3rem;
+    gap: .8rem;
+  }
 }
 @media (max-width: 490px) {
 
   .heading-1 p{
-    font-size: 2.3rem;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .custom-checkbox-text{
+    font-size: .9rem;
+    font-weight: 500;
+  }
+
+  .hobby {
+    padding: 0 2rem;
+    gap: .6rem;
   }
 
   .group-4 {
@@ -691,5 +791,9 @@ p {
   }
   .card-3 {
     width: 100%;
+  }
+
+  .input-box{
+    padding: 2rem 3rem;
   }
 }
