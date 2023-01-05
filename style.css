@@ -43,11 +43,36 @@ nav {
   display: flex;
   color: white;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
   align-items: center;
 }
 
+.logo{
+  display: flex;
+  width: 20%;
+}
+
+.logo-img{
+  width: 24%;
+}
+
+.logo-img img{
+  max-width: 100%;
+
+}
+
 .logo p {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.logo-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo h3{
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -638,6 +663,9 @@ p {
 
   .custom-checkbox{
     padding: .8rem 0;
+  }
+  .logo-img img{
+    max-width: 100%;
   }
 }
 
