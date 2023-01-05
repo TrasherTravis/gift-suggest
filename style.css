@@ -141,8 +141,20 @@ nav {
 .input-box {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 6rem;
+  gap: 1rem;
+  padding: 1.3rem 6rem;
+}
+
+.input-box.error input {
+  border-color: var(--error-color);    
+}
+
+.input-box small{
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
 }
 
 .group-4 h4 {
@@ -205,7 +217,7 @@ nav {
   padding: 5rem 0 5rem ;
 }
 
-.button-1 input {
+.button-1 button {
   width: 80%;
   cursor: pointer;
   padding: 1.5rem 0;
@@ -214,6 +226,27 @@ nav {
   border-radius: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.frame-1{
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.frame-2{
+  width: 23%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.frame-1 img{
+  max-width: 80%;
+}
+.frame-2 img{
+  max-width: 80%;
 }
 
 .result-par h3{
@@ -233,9 +266,19 @@ nav {
 .search-result{
   padding: 1rem 5rem;
   height: 58vh;
-  overflow: scroll;
+  overflow: auto;
   display: none;
 }
+
+.search-result::-webkit-scrollbar {
+  width: .7rem;
+}
+
+.search-result::-webkit-scrollbar-thumb {
+  background:var(--purple); 
+  border-radius: 1rem;
+}
+
 .result-1{
   display: flex;
   align-items: center;
@@ -667,6 +710,14 @@ p {
   .logo-img img{
     max-width: 100%;
   }
+
+  .search-result{
+    padding: 1rem 3.5rem;
+  }
+  .group-4{
+    width: 55%;
+  }
+  
 }
 
 @media (max-width: 900px) {
@@ -773,7 +824,19 @@ p {
     font-size: 4rem;
     font-weight: 400;
   }
+
+  .result-par h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+  .result-par p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2rem;
+  }
 }
+
 @media (max-width: 625px) {
   .footed {
     flex-wrap: wrap;
@@ -790,6 +853,11 @@ p {
     padding: 0 3rem;
     gap: .8rem;
   }
+
+  .group-4{
+    width: 75%;
+  }
+
 }
 @media (max-width: 490px) {
 
@@ -809,7 +877,7 @@ p {
   }
 
   .group-4 {
-    width: 75%;
+    width: 80%;
   }
   .card-1 {
     width: 100%;
@@ -824,4 +892,13 @@ p {
   .input-box{
     padding: 2rem 3rem;
   }
+
+  .result-1{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .result-par{
+    text-align: center;
+  }
+
 }

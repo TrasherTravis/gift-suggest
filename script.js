@@ -1,14 +1,23 @@
 
-function validation() {
-  var age = document.getElementById('age').value;
+// function showError(input, message) {
+//   const small = formControl.querySelector('small');
+//   small.innerText = message;
+// }
+
+// let btn = document.getElementById("submit");
+
+// btn.addEventListener("click", validation);
+
+// function validation() {
+//   var age = document.getElementById('age').value;
   
-  if ( !( age > 1 && age<100 ) ){
+//   if ( !( age > 1 && age<100 ) ){
   
-          alert("The age must be a number between 1 and 100");
-          return false;
-  }
-  return true;
-  }
+//           alert("The age must be a number between 1 and 100");
+//           return false;
+//   }
+//   return true;
+//   }
 
   const addcolumn = document.querySelector("#submit");
   

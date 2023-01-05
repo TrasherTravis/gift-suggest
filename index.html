@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Perfect Gift - AI based gift suggestion tool. </title>
+    <title>Perfect Gift - AI based Gift Suggestion Tool!</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-
   </head>
   <body>
     <div class="section-1">
@@ -41,21 +40,33 @@
       </div>
 
       <div class="group-3">
+        <div class="frame-1">
+          <img src="images/gift-3.jpg">
+          <img src="images/gift-1.jpg">
+        </div>
         <div class="group-4">
           <h4>Please Enter Details Below</h4>
 
-          <form action="">
+          <form id="myForm" class="form" action="">
           <div class="input-box">
-            <input type="text" name="fullName" id="name" placeholder="Fullname" required />
+            <input type="text" name="fullName" id="name" placeholder="Fullname" required/>
+            </div>
 
-            <input type="number" name="age" id="age" placeholder="Age" required />
+            <div class="input-box">
+            <input type="number" name="age" id="age" placeholder="Age" required/>
+            <small>Error Message</small>
+          </div>
 
+          <div class="input-box">
             <select name="gender" id="gender" required>
               <option value="" disabled selected hidden>Gender</option>
               <option value="male">Male</option>
               <option value="female"><p>Female</p></option>
               <option value="others"><p>Other</p></option>
             </select>
+          </div>
+
+          <div class="input-box">
             <select id="country" name="country" class="form-control" required>
               <option value="" disabled selected hidden>Country</option>
               <option value="Afghanistan">Afghanistan</option>
@@ -357,12 +368,18 @@
               <option value="Zambia">Zambia</option>
               <option value="Zimbabwe">Zimbabwe</option>
             </select>
+          </div>
 
-            <input type="text" name="city" id="city" placeholder="City" required />
+          <div class="input-box">
+            <input type="text" name="city" id="city" placeholder="City" required/>
+          </div>
 
+          <div class="input-box">
             <input type="text" name="relationship" id="relationship" placeholder="Relationship" required/>
+          </div>
 
-            <input type="text" name="hobby" id="hobbies" placeholder="Hobbies" />
+          <div class="input-box">
+            <input type="text" name="hobby" id="hobbies" placeholder="Hobbies" required />
           </div>
 
           <div class="hobby">
@@ -439,13 +456,17 @@
             </label>
           </div>
 
-          <div class="button-1">
-            <input type="submit" name="submit" value="GENERATE" id="submit" onclick="validation()">
-          </div>
-
         </form>
 
+          <div class="button-1">
+            <button name="butten" id="submit">GENERATE</button>
+          </div>
+
         <div class="search-result">
+          <div class="hr-1">
+            <hr>
+          </div>
+          <h4>Your Gift Suggestion</h4>
           <div class="result-1">
             <div class="result-img">
               <img src="images/1.png" alt="">
@@ -507,7 +528,9 @@
             </div>
           </div>
         </div>
-
+        </div>
+        <div class="frame-2">
+          <img src="images/gift-2.jpg">
         </div>
       </div>
 
