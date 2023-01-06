@@ -1,23 +1,35 @@
 
-// function showError(input, message) {
-//   const small = formControl.querySelector('small');
-//   small.innerText = message;
-// }
 
-// let btn = document.getElementById("submit");
+function validateForm(event) {
+  let age = document.getElementById('age').value;
+  let name = document.getElementById('name').value;
 
-// btn.addEventListener("click", validation);
-
-// function validation() {
-//   var age = document.getElementById('age').value;
   
-//   if ( !( age > 1 && age<100 ) ){
+
+  if(name === "" ) {
+    document.getElementById('name_error').classList.remove('hidden');
+  } else {
+      document.getElementById('name_error').classList.add('hidden');
+  }
+
+
+  if (age>=100  || age === "") {
+      document.getElementById('phone_error').classList.remove('hidden');
+  } else {
+      document.getElementById('phone_error').classList.add('hidden');
+      
+  }
+
   
-//           alert("The age must be a number between 1 and 100");
-//           return false;
-//   }
-//   return true;
-//   }
+  event.preventDefault();
+}
+
+
+document.getElementById('submit').addEventListener('click', validateForm);
+
+
+
+
 
   const addcolumn = document.querySelector("#submit");
   

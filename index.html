@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Perfect Gift - AI based Gift Suggestion Tool!</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>CAKE GO</title>
   </head>
   <body>
     <div class="section-1">
@@ -15,7 +14,7 @@
           <nav>
             <div class="logo">
               <div class="logo-img">
-                <img src="images/box-1.png">
+                <img src="images/logo.png">
               </div>
               <div class="logo-heading">
               <P>PERFECT</p>
@@ -40,21 +39,18 @@
       </div>
 
       <div class="group-3">
-        <div class="frame-1">
-          <img src="images/gift-3.jpg">
-          <img src="images/gift-1.jpg">
-        </div>
         <div class="group-4">
           <h4>Please Enter Details Below</h4>
 
           <form id="myForm" class="form" action="">
           <div class="input-box">
             <input type="text" name="fullName" id="name" placeholder="Fullname" required/>
+            <div id="name_error" class="error hidden">fill the name</div>
             </div>
 
             <div class="input-box">
-            <input type="number" name="age" id="age" placeholder="Age" required/>
-            <small>Error Message</small>
+            <input type="number" name="age" maxlength="4" id="age"  pattern="\d{4}" placeholder="Age" required/>
+            <div id="phone_error" class="error hidden">Please enter a age between 1 to 100</div>
           </div>
 
           <div class="input-box">
@@ -529,9 +525,7 @@
           </div>
         </div>
         </div>
-        <div class="frame-2">
-          <img src="images/gift-2.jpg">
-        </div>
+        
       </div>
 
       <div class="group-5">

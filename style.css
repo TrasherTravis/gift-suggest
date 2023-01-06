@@ -49,16 +49,6 @@ nav {
 
 .logo{
   display: flex;
-  width: 20%;
-}
-
-.logo-img{
-  width: 24%;
-}
-
-.logo-img img{
-  max-width: 100%;
-
 }
 
 .logo p {
@@ -129,6 +119,11 @@ nav {
   display: flex;
   justify-content: center;
   padding: 0 0 8rem 0;
+  background-image: url(images/Rectangle\ 1.png),url(images/gift-box-pink\ 1.png),url(images/gift-box\ 1.png);
+  background-position: left top ,left bottom ,right center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  
 }
 
 .group-4 {
@@ -136,6 +131,7 @@ nav {
   text-align: center;
   background: white;
   border-radius: 3.5rem;
+  opacity: 0.9;
 }
 
 .input-box {
@@ -145,17 +141,17 @@ nav {
   padding: 1.3rem 6rem;
 }
 
-.input-box.error input {
-  border-color: var(--error-color);    
+.error
+{
+  color: red;
+  size: 80%
+}
+.hidden
+{
+  display:none;
 }
 
-.input-box small{
-  color: var(--error-color);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
+
 
 .group-4 h4 {
   font-size: 1.8rem;
@@ -890,7 +886,7 @@ p {
   }
 
   .input-box{
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
   }
 
   .result-1{
