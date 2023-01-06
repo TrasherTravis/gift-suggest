@@ -160,6 +160,35 @@ nav {
   color: black;
 }
 
+.input-box-1{
+  display: flex;
+  padding: 1.3rem 6rem;
+}
+
+.rangetitle{
+  display: flex;
+  width: 40%;
+  align-items: center;
+}
+
+.rangeinput{
+  display: flex;
+  gap: 3rem;
+  width: 60%;
+}
+
+.input-box-1 input{
+  width: 100%;
+  padding: 1.1rem;
+  border-radius: 1.2rem;
+  border: 1px solid rgba(11, 9, 9, 0.15);
+}
+
+.input-box-1 label{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
 .input-box input {
   width: 100%;
   padding: 1.1rem;
@@ -802,6 +831,15 @@ p {
     padding: .4rem 0;
   }
 
+  .rangetitle label{
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .rangeinput{
+    gap: 1.5rem;
+  }
+
   .hobby {
     padding: 0 4.5rem;
     gap: .8rem;
@@ -840,6 +878,11 @@ p {
     gap: 2rem;
   }
 
+  .rangetitle label{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
   .custom-checkbox-text{
     font-size: 1rem;
     font-weight: 500;
@@ -867,6 +910,19 @@ p {
     font-weight: 500;
   }
 
+  .rangetitle label{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .input-box-1{
+    padding: 1.3rem 4rem;
+  }
+
+  .rangeinput{
+    gap: 0.7rem;
+  }
+
   .hobby {
     padding: 0 2rem;
     gap: .6rem;
@@ -875,6 +931,12 @@ p {
   .group-4 {
     width: 80%;
   }
+
+  .group-4 h4{
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+
   .card-1 {
     width: 100%;
   }

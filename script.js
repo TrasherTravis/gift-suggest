@@ -3,10 +3,10 @@
 function validateForm(event) {
   let age = document.getElementById('age').value;
   let name = document.getElementById('name').value;
+  var regex = /^[a-zA-Z]*$/;
 
-  
 
-  if(name === "" ) {
+  if(name === "" || !regex.test(name)) {
     document.getElementById('name_error').classList.remove('hidden');
   } else {
       document.getElementById('name_error').classList.add('hidden');
@@ -20,7 +20,6 @@ function validateForm(event) {
       
   }
 
-  
   event.preventDefault();
 }
 
@@ -29,11 +28,9 @@ document.getElementById('submit').addEventListener('click', validateForm);
 
 
 
-
-
   const addcolumn = document.querySelector("#submit");
   
-  addcolumn.addEventListener("click",columnresult);
+  addcolumn.addEventListener("click", columnresult);
 
 
   function columnresult () {
